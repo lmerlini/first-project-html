@@ -1,0 +1,186 @@
+:root {
+    --distancia: 20px;
+}
+.navegacao {
+    background-color: #000;
+    color: #fff;
+    height: 150px;
+    background-image: url('../img/fundo-de-luar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.navegacao .logo {
+    width: 150px;    
+}
+ul {
+    position: absolute;
+    right: var(--distancia);
+    top: calc(150px / 2);    
+}
+.navegacao ul, li{    
+    display: inline-block;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+}
+a:hover{    
+    text-decoration: underline;
+}
+/*CONTENT*/
+.container {    
+    height: 100%;
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding: 200px;
+}
+.container h1 {    
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 0 10px;    
+    color: #672aba;
+    font-size: 2em;
+    font-weight: 900;
+}
+.container hr {
+    margin-bottom: 10px;
+    max-width: 50%;
+    border-color:  #672aba;
+    border-width: 0.1px;
+    box-shadow: .1px .1px .1px #6727d2;
+
+}
+.etiqueta {    
+    position: relative;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #672aba;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.2);    
+    max-width: calc(100% / 3);
+    margin-left: 30.33%;
+    margin-bottom: 1%;
+    padding: 3%;         
+}
+.etiqueta:hover {
+    background: #672aba;
+    color: #fff;
+    cursor: pointer;
+}
+.etiqueta:last-of-type{ margin-bottom: 0; }
+.etiqueta .title {    
+    position: absolute;
+    width: 90%;
+    top:5px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.etiqueta p {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.fluid {        
+    position: relative;
+    width: 100%;
+    background-color: #2c2c2c;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    font-family: "Lato, Sans, Code Source Pro, Arial";
+    font-size: 1.6em;
+    text-align: center; 
+    padding: 25px 0 25px;    
+}
+.fluid h1 {
+    margin-bottom: 10px;
+}
+input, textarea{
+    text-align: center;
+    font-size: 1em;
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    margin-left: 25%; 
+    margin-bottom: 10px;
+    border-color: #672aba;
+    font: 1em Arial;
+}
+form button{    
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border-color: #672aba;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+form button:hover{
+    background-color: #672aba;
+    color: #000;
+    border-color: #672aba;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/*FOOTER*/
+.footer {    
+    box-sizing: border-box;
+    display: flex;      
+    max-height: 400px;
+}
+
+
+.div1 {        
+    flex: 2;
+    padding: 150px 0 150px;
+    background-color: #6727d2;    
+    color: #fff;
+}
+
+.div2 {
+    flex: 2;
+    padding: 150px 0 150px;
+    background-color: #679aba;    
+}
+
+
+.div1:hover {
+    background-image: url('../img/estrelas.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    flex: 3;
+    z-index: 1;
+    text-indent: each-line;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.separacaoNoite {
+    width: 100%px;
+    height: 500px;
+    background-image: url('../img/fundo-de-luar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.separacaoDia {
+    width: 100%px;
+    height: 500px;
+    background-image: url('../img/praia-do-sono-capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

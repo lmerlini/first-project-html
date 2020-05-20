@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Treinamento Front</title>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <body>
+
+        <nav class="navegacao ">
+            <img
+                class="logo"
+                src="img/urano.png" alt="UranoS">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main class="container">
+            <h1>Desenvolvimentos</h1>
+            <hr>
+
+            <article class="etiqueta">
+                <div class="title">
+                    Relatórios
+                </div>
+                <p>lorem ipsu dolor du ka me viadafs</p>
+            </article>
+
+            <article class="etiqueta">
+                <div class="title">
+                    Regras
+                </div>
+                <p>lorem ipsu dolor du ka me viadafs</p>
+
+            </article>
+
+            <article class="etiqueta">
+                <div class="title">
+                    Telas
+                </div>
+                <p>lorem ipsu dolor du ka me viadafs</p>
+            </article>
+        </main>
+
+        <section class="fluid">
+            <h1>Contato</h1>
+
+            <form name="contato" action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <input type="text" name="nome" value="" placeholder="Nome"
+                       autofocus=""
+                       />
+                <input type="email" name="email" value="" placeholder="Email" />
+                <textarea name="descricao" rows="4" cols="20" placeholder="Sua Mensagem Aqui"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+
+            <div class="div1">
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+            </div>
+
+
+            <div class="div2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus augue, feugiat tincidunt enim id, tempor feugiat tellus. Nulla mollis mauris eget vulputate pulvinar. Pellentesque nec iaculis massa, sed pellentesque augue. Cras vel lacus fermentum, egestas ante pulvinar, volutpat ipsum. In convallis molestie lectus at ultrices.
+            </div>
+
+        </footer>
+
+        <div style="
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             max-height: 20px;
+             ">
+            Direitos autorais para: fulano de tal
+        </div>
+
+        <script>
+
+            var divNova = document.createElement("div");
+            var divPai = document.querySelector(".fluid");
+            var att = document.createAttribute("class");
+            var h1 = document.body.insertBefore(divNova, divPai);
+
+            let horario = new Date();
+            if (horario.toLocaleTimeString() >= '18:00:00' || horario.toLocaleTimeString() <= '06:00:00') {
+                att.value = "separacaoNoite";
+                h1.setAttributeNode(att);
+
+            } else {
+                att.value = "separacaoDia";
+                h1.setAttributeNode(att);
+
+            }
+
+        </script>
+
+    </body>
+</html>

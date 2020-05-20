@@ -1,0 +1,8 @@
+/node_modules
+/nbproject/*
+/test/*
+.bowerrc
+bower.json
+Gruntfile.js
+gulpfile.js
+package.json
